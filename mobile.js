@@ -37,7 +37,6 @@ imgElements.forEach((img, index) => {
       "axelsito",
       "Cesar<br>OÑA",
     ];
-    const names = ["Omar", "Jeylu", "Lasaña", "axelsito", "César<br>Murio poco despues de hacer la página porque se chingo un taco de hubre y le callo pesado"];
 
     // Cambiar el encabezado con el nombre correspondiente
     header1.innerHTML = names[index];

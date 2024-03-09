@@ -1,2 +1,2 @@
 # Proyecto-Ecologia
-Pagina a cerca del proyecto de ecologia
+Pagina acerca del proyecto de ecologia

@@ -30,7 +30,13 @@ imgElements.forEach((img, index) => {
     // Ocultar texto
     novertext.classList.remove("Novertexto");
     // Nombres asociados a las imágenes
-    const names = ["Omar", "Jeylu", "Lasaña", "axelsito", "Cesar<br>OÑA"];
+    const names = [
+      "<li> Arreglando pendejadas del cesar <br>",
+      "Jeylu",
+      "Lasaña",
+      "axelsito",
+      "Cesar<br>OÑA",
+    ];
     // Cambiar el encabezado con el nombre correspondiente
     header1.innerHTML = names[index];
     // Mostrar símbolo de cerrar (X)

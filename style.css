@@ -107,6 +107,11 @@ header {
     cursor: pointer;
 }
 
+.foto{
+    height: 250px;
+    width: 250px;
+}
+
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px;
@@ -117,6 +122,7 @@ header {
         top: 15px;
         right: 35px;
     }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -129,4 +135,26 @@ header {
     .menu {
         display: initial;
     }
+
+}
+
+.espacio_caritas{
+    animation-name: bajar;
+    animation-duration: 1s;
+    position: relative;
+    top: 100px;
+    display: inline;
+    size: relative;
+    
+}
+
+@keyframes bajar {
+    0% {opacity: 0; top: -10px;}
+    100% {top: 100px; opacity: 1;}
+}
+
+
+.nosText{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }

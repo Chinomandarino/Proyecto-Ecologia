@@ -4,19 +4,23 @@ const menuClose = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
 const clous = doc.querySelector(".Cerrar");
 const equis = doc.getElementById("equisona");
-const img1 = doc.getElementById("img1");
-const img2 = doc.getElementById("img2");
-const img3 = doc.getElementById("img3");
-const img4 = doc.getElementById("img4");
-const img5 = doc.getElementById("img5");
-const header1 = doc.getElementById("ache1");
 const divOverlay = doc.querySelector(".descrFotos");
 const novertext = doc.querySelector(".Novertexto");
+const imgElements = [
+  doc.getElementById("img1"),
+  doc.getElementById("img2"),
+  doc.getElementById("img3"),
+  doc.getElementById("img4"),
+  doc.getElementById("img5"),
+];
+const header1 = doc.getElementById("ache1");
 
 menuOpen.addEventListener("click", () => {
   overlay.classList.add("overlay--active");
 });
 
+<<<<<<< HEAD
+//ESTA MADRE HACE QUE CUANDO LE PRESIONES A UNA CARA SE PONGA EL OVERLAY CON EL TEXTO CORRESPONDIENTE
 img1.addEventListener("click", () => {
   divOverlay.classList.add("imgO");
   novertext.classList.remove("Novertexto");
@@ -50,6 +54,16 @@ img5.addEventListener("click", () => {
   novertext.classList.remove("Novertexto");
   header1.innerHTML = " Cesar<br>OÑA";
   equis.innerHTML = "&times;";
+=======
+imgElements.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    divOverlay.classList.add("imgO");
+    novertext.classList.remove("Novertexto");
+    const names = ["Omar", "Jeylu", "Lasaña", "axelsito", "Cesar<br>OÑA"];
+    header1.innerHTML = names[index];
+    equis.innerHTML = "&times;";
+  });
+>>>>>>> 8c81304f7aa2dcf8e82b86695fa097265ec8ba51
 });
 
 equis.addEventListener("click", () => {

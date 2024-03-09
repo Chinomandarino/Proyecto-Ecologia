@@ -20,6 +20,7 @@ menuOpen.addEventListener("click", () => {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //ESTA MADRE HACE QUE CUANDO LE PRESIONES A UNA CARA SE PONGA EL OVERLAY CON EL TEXTO CORRESPONDIENTE
 img1.addEventListener("click", () => {
   divOverlay.classList.add("imgO");
@@ -55,6 +56,8 @@ img5.addEventListener("click", () => {
   header1.innerHTML = " Cesar<br>OÑA";
   equis.innerHTML = "&times;";
 =======
+=======
+>>>>>>> 8c81304f7aa2dcf8e82b86695fa097265ec8ba51
 imgElements.forEach((img, index) => {
   img.addEventListener("click", () => {
     divOverlay.classList.add("imgO");
@@ -63,6 +66,9 @@ imgElements.forEach((img, index) => {
     header1.innerHTML = names[index];
     equis.innerHTML = "&times;";
   });
+<<<<<<< HEAD
+>>>>>>> 8c81304f7aa2dcf8e82b86695fa097265ec8ba51
+=======
 >>>>>>> 8c81304f7aa2dcf8e82b86695fa097265ec8ba51
 });
 

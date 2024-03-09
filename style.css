@@ -108,7 +108,7 @@ header {
     cursor: pointer;
 }
 
-.foto{
+.foto {
     height: 250px;
     width: 250px;
     position: relative;
@@ -141,28 +141,35 @@ header {
 
 }
 
-.espacio_caritas{
+.espacio_caritas {
     animation-name: bajar;
     animation-duration: 1s;
     position: relative;
     top: 100px;
     display: block;
 
-    
+
 }
 
 @keyframes bajar {
-    0% {opacity: 0; top: -10px;}
-    100% {top: 100px; opacity: 1;}
+    0% {
+        opacity: 0;
+        top: -10px;
+    }
+
+    100% {
+        top: 100px;
+        opacity: 1;
+    }
 }
 
 
-.nosText{
+.nosText {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
 
-.descrFotos{
+.descrFotos {
     background-color: #0fb886;
     width: 0px;
     height: 0px;
@@ -175,22 +182,22 @@ header {
     top: 100px;
 }
 
-.imgO{
+.imgO {
     opacity: 1;
     width: 400px;
     height: 400px;
 }
 
-.Novertexto{
+.Novertexto {
     display: none;
 }
 
-h1{
+h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
 
-.Cerrar{
+.Cerrar {
     position: absolute;
     left: 350px;
     font-family: "Montserrat", sans-serif;

@@ -48,7 +48,7 @@ img4.addEventListener("click", () =>{
 img5.addEventListener("click", () =>{
   divOverlay.classList.add("imgO")
   novertext.classList.remove("Novertexto")
-  header1.innerHTML=" Cesar<br>OÑA"
+  header1.innerHTML=" Cesar<br>El creador de los culos aceitados y gorditos. *cada noche piensa en furina aceitada*"
   equis.innerHTML="&times;"
 })
 

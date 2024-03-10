@@ -114,6 +114,7 @@ header {
     width: 250px;
     position: relative;
     clip-path: circle(50%);
+    cursor: pointer;
 }
 
 @media screen and (max-height: 450px) {
@@ -162,6 +163,7 @@ header {
 .nosText {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    margin: 50px;
 }
 
 .descrFotos {
@@ -201,13 +203,6 @@ h1 {
     cursor: pointer;
 }
 
-#Empiezo {
-    background-color: #0fb886;
-    height: 700px;
-    animation-name: APA;
-    animation-duration: 0.7s;
-}
-
 @keyframes APA {
     0% {
         opacity: 0;
@@ -235,4 +230,70 @@ h1 {
 .logo-container2 {
     display: flex;
     margin-right: 38em;
+}
+
+.Princi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.h1Index{
+    box-shadow: 10px 10px 10px;
+    border-radius: 15px;
+    text-align: center;
+    border: 10px solid #24252a;
+    background-color: #0a7d5ba8;
+    max-height: 500px;
+    max-width: 700px;
+}
+
+.eslaid{
+    display: flex;
+    overflow: hidden;
+}
+
+/*Para hacer la animacion de alternar las imagenes*/
+#imges{
+    animation: desapa 6s infinite;
+}
+
+@keyframes desapa {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.botoncito{
+    height: 150px;
+    width: 300px;
+    background-color: #0fb886;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 10px solid #24252a;
+}
+
+.h1princi{
+    text-align: center;
+    margin-top: 15%;
+}
+
+#btnOverlay1{
+    background-color: aqua;
+}
+
+#btnOverlay2{
+    background-color: aqua;    
+}
+
+#btnOverlay3{
+    background-color: aqua;    
+}
+
+#btnOverlay4{
+    background-color: aqua;    
+}
+
+#btnOverlay5{
+    background-color: aqua;    
 }

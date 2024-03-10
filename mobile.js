@@ -20,7 +20,7 @@ menuOpen.addEventListener("click", () => {
 img1.addEventListener("click", () =>{
   divOverlay.classList.add("imgO")
   novertext.classList.remove("Novertexto")
-  header1.innerHTML=" Omar destrozo la cabeza de 5 niños iranies y acabo con el cartel de culiacan el solo con una mano"
+  header1.innerHTML=" Omar destrozo la cabeza de 5 niños iranies y acabo con el cartel de culiacan el solo con una mano mientras creaba google"
   equis.innerHTML="&times;" 
 })
 

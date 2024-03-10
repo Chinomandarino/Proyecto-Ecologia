@@ -271,6 +271,7 @@ h1 {
     margin-top: 50px;
     margin-bottom: 50px;
     border: 10px solid #24252a;
+    cursor: pointer;
 }
 
 .h1princi{
@@ -278,22 +279,3 @@ h1 {
     margin-top: 15%;
 }
 
-#btnOverlay1{
-    background-color: aqua;
-}
-
-#btnOverlay2{
-    background-color: aqua;    
-}
-
-#btnOverlay3{
-    background-color: aqua;    
-}
-
-#btnOverlay4{
-    background-color: aqua;    
-}
-
-#btnOverlay5{
-    background-color: aqua;    
-}

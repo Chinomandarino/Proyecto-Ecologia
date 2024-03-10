@@ -1,63 +1,69 @@
-// Referencia al objeto global document
 const doc = document;
-
-// Elementos del DOM
 const menuOpen = doc.querySelector(".menu");
 const menuClose = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
-const equis = doc.getElementById("equisona");
-const divOverlay = doc.querySelector(".descrFotos");
-const novertext = doc.querySelector(".Novertexto");
-const imgElements = [
-  doc.getElementById("img1"),
-  doc.getElementById("img2"),
-  doc.getElementById("img3"),
-  doc.getElementById("img4"),
-  doc.getElementById("img5"),
-];
-const header1 = doc.getElementById("ache1");
+const clous=doc.querySelector(".Cerrar");
+const equis=doc.getElementById('equisona');
+const img1=doc.getElementById('img1');
+const img2=doc.getElementById('img2');
+const img3=doc.getElementById('img3');
+const img4=doc.getElementById('img4');
+const img5=doc.getElementById('img5');
+const header1=doc.getElementById('ache1');
+const divOverlay= doc.querySelector(".descrFotos");
+const novertext=doc.querySelector(".Novertexto");
 
-// Evento de clic para abrir el menú
 menuOpen.addEventListener("click", () => {
   overlay.classList.add("overlay--active");
 });
 
-// Evento de clic para cada imagen
-imgElements.forEach((img, index) => {
-  img.addEventListener("click", () => {
-    // Mostrar overlay de imágenes
-    divOverlay.classList.add("imgO");
-    // Ocultar texto
-    novertext.classList.remove("Novertexto");
-    // Nombres asociados a las imágenes
-    const names = [
-      "<li> Arreglando pendejadas del cesar <br>",
-      "Jeylu",
-      "Lasaña",
-      "axelsito",
-      "Cesar<br>OÑA",
-    ];
+img1.addEventListener("click", () =>{
+  divOverlay.classList.add("imgO")
+  novertext.classList.remove("Novertexto")
+  header1.innerHTML=" Omar destrozo la cabeza de 5 niños iranies y acabo con el cartel de culiacan el solo con una mano"
+  equis.innerHTML="&times;" 
+})
 
-    // Cambiar el encabezado con el nombre correspondiente
-    header1.innerHTML = names[index];
-    // Mostrar símbolo de cerrar (X)
-    equis.innerHTML = "&times;";
-  });
-});
+img2.addEventListener("click", () =>{
+  divOverlay.classList.add("imgO")
+  novertext.classList.remove("Novertexto")
+  header1.innerHTML=" Jeyli amante de las patas aceitadas de nahida "
+  equis.innerHTML="&times;"
+})
 
-// Evento de clic para cerrar la overlay de imágenes
-equis.addEventListener("click", () => {
-  // Ocultar overlay de imágenes
-  divOverlay.classList.remove("imgO");
-  // Mostrar texto nuevamente
-  novertext.classList.add("Novertexto");
-  // Limpiar contenido del encabezado y símbolo de cerrar
-  header1.innerHTML = "";
-  equis.innerHTML = "";
-});
+img3.addEventListener("click", () =>{
+  divOverlay.classList.add("imgO")
+  novertext.classList.remove("Novertexto")
+  header1.innerHTML=" Lasaña si le avientas a los lobos se los cojera a todos"
+  equis.innerHTML="&times;"
+})
 
-// Evento de clic para cerrar el menú
+img4.addEventListener("click", () =>{
+  divOverlay.classList.add("imgO")
+  novertext.classList.remove("Novertexto")
+  header1.innerHTML=" axelsito el creador del sexo"
+  equis.innerHTML="&times;"
+})
+
+img5.addEventListener("click", () =>{
+  divOverlay.classList.add("imgO")
+  novertext.classList.remove("Novertexto")
+  header1.innerHTML=" Cesar<br>OÑA"
+  equis.innerHTML="&times;"
+})
+
+equis.addEventListener("click", () =>{
+  divOverlay.classList.remove("imgO")
+  novertext.classList.add("Novertexto")
+  header1.innerHTML=""
+  equis.innerHTML=""
+})
+
 menuClose.addEventListener("click", () => {
-  // Ocultar el menú
   overlay.classList.remove("overlay--active");
 });
+
+
+function cambiar(){
+
+}

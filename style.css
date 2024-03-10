@@ -78,6 +78,8 @@ header {
     width: 100%;
 }
 
+
+
 .overlay__content {
     display: flex;
     height: 100%;
@@ -207,6 +209,30 @@ h1 {
 }
 
 @keyframes APA {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.logo-container1 {
+    display: flex;
+    margin-left: em;
+}
+
+.logo-container2 {
+    display: flex;
+    margin-right: 38em;
 }

@@ -12,7 +12,6 @@ header {
     background-color: #24252a;
 }
 
-
 .logo {
     margin-right: auto;
 }
@@ -32,11 +31,11 @@ header {
 }
 
 .nav__links li {
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .nav__links li a {
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease;
 }
 
 .nav__links li a:hover {
@@ -50,7 +49,7 @@ header {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: background-color 0.3s ease;
 }
 
 .cta:hover {
@@ -72,7 +71,7 @@ header {
     top: 0;
     background-color: #24252a;
     overflow-x: hidden;
-    transition: all 0.5s ease 0s;
+    transition: width 0.5s ease;
 }
 
 .overlay--active {
@@ -91,7 +90,7 @@ header {
     padding: 15px;
     font-size: 36px;
     display: block;
-    transition: all 0.3s ease 0s;
+    transition: color 0.3s ease;
 }
 
 .overlay a:hover,
@@ -125,11 +124,9 @@ header {
         top: 15px;
         right: 35px;
     }
-
 }
 
 @media only screen and (max-width: 800px) {
-
     .nav__links,
     .cta {
         display: none;
@@ -138,17 +135,13 @@ header {
     .menu {
         display: initial;
     }
-
 }
 
 .espacio_caritas {
-    animation-name: bajar;
-    animation-duration: 1s;
+    animation: bajar 1s;
     position: relative;
     top: 100px;
     display: block;
-
-
 }
 
 @keyframes bajar {
@@ -163,7 +156,6 @@ header {
     }
 }
 
-
 .nosText {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -171,12 +163,12 @@ header {
 
 .descrFotos {
     background-color: #0fb886;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: relative;
     opacity: 0;
     z-index: 1;
-    transition: 0.5s;
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
     margin: 0 auto;
     border-radius: 15px;
     top: 100px;
@@ -206,9 +198,10 @@ h1 {
     cursor: pointer;
 }
 
-#Empiezo{
+#Empiezo {
     background-color: #0fb886;
     height: 700px;
+<<<<<<< HEAD
     animation-name: APA;
     animation-duration: 0.5s;
 }
@@ -217,3 +210,6 @@ h1 {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+=======
+}
+>>>>>>> ce817ad8794f316d59921b0dba80f73ed7ffd4d2

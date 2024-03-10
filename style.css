@@ -201,15 +201,11 @@ h1 {
 #Empiezo {
     background-color: #0fb886;
     height: 700px;
-<<<<<<< HEAD
     animation-name: APA;
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
 }
 
 @keyframes APA {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-=======
-}
->>>>>>> ce817ad8794f316d59921b0dba80f73ed7ffd4d2

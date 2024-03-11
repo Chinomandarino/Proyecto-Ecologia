@@ -16,46 +16,44 @@ const novertext = doc.querySelector(".Novertexto");
 
 // Check if menuOpen element exists before adding event listeners
 
-  menuOpen.addEventListener("click", () => {
-    overlay.classList.add("overlay--active");
+menuOpen.addEventListener("click", () => {
+  overlay.classList.add("overlay--active");
+});
+
+if (img1) {
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      handleImageClick(index);
+    });
   });
 
-   if(img1){
-    images.forEach((img, index) => {
-      img.addEventListener("click", () => {
-        handleImageClick(index);
-      });
-    });
+  closeButton.addEventListener("click", () => {
+    closeOverlay();
+    console.log("OLAS");
+  });
 
-    closeButton.addEventListener("click", () => {
-      closeOverlay();
-      console.log("OLAS")
-    });
+  closeIcon.addEventListener("click", () => {
+    closeOverlay();
+    console.log("OLAS");
+  });
+}
 
-    closeIcon.addEventListener("click", () => {
-      closeOverlay();
-      console.log("OLAS")
-    });
-  
+function handleImageClick(index) {
+  divOverlay.classList.add("imgO");
+  novertext.classList.remove("Novertexto");
 
+  const imageDetails = getImageDetails(index);
+  header1.innerHTML = imageDetails.text;
+  closeIcon.innerHTML = "&times;";
+}
 
-
-  function handleImageClick(index) {
-    divOverlay.classList.add("imgO");
-    novertext.classList.remove("Novertexto");
-
-    const imageDetails = getImageDetails(index);
-    header1.innerHTML = imageDetails.text;
-    closeIcon.innerHTML = "&times;";
-  }
-
-  function closeOverlay() {
-    divOverlay.classList.remove("imgO");
-    novertext.classList.add("Novertexto");
-    header1.innerHTML = "";
-    closeIcon.innerHTML = "";
-    overlay.classList.remove("overlay--active");
-  }
+function closeOverlay() {
+  divOverlay.classList.remove("imgO");
+  novertext.classList.add("Novertexto");
+  header1.innerHTML = "";
+  closeIcon.innerHTML = "";
+  overlay.classList.remove("overlay--active");
+}
 
 function getImageDetails(index) {
   const details = [

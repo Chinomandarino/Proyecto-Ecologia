@@ -3,7 +3,6 @@ const menuOpen = doc.querySelector(".menu");
 const closeButton = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
 const closeIcon = doc.getElementById("equisona");
-
 const images = [
   doc.getElementById("img1"),
   doc.getElementById("img2"),
@@ -11,7 +10,6 @@ const images = [
   doc.getElementById("img4"),
   doc.getElementById("img5"),
 ];
-
 const header1 = doc.getElementById("ache1");
 const divOverlay = doc.querySelector(".descrFotos");
 const novertext = doc.querySelector(".Novertexto");
@@ -66,5 +64,33 @@ function getImageDetails(index) {
   ];
   return { text: details[index] };
 }
+// Obtén referencias a los botones y al contenedor de texto
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+var btn5 = document.getElementById("btn5");
+var textoContainer = document.getElementById("textoContainer");
 
+function changeText(buttonId) {
+  var textContent = document.getElementById("textcontent");
+  switch (buttonId) {
+    case "btn1":
+      textContent.innerHTML =
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+      break;
+    case "btn2":
+      textContent.innerHTML = "Texto para ¿Dónde?";
+      break;
+    case "btn3":
+      textContent.innerHTML = "Texto para ¿Cuándo?";
+      break;
+    case "btn4":
+      textContent.innerHTML = "Texto para Casa valentina";
+      break;
+    case "btn5":
+      textContent.innerHTML = "Texto para ¿Quién?";
+      break;
+  }
+}
 console.log("Script loaded");

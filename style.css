@@ -232,12 +232,12 @@ h1 {
     margin-right: 38em;
 }
 
-.Princi{
+.Princi {
     display: flex;
     justify-content: space-evenly;
 }
 
-.h1Index{
+.h1Index {
     box-shadow: 10px 10px 10px;
     border-radius: 15px;
     text-align: center;
@@ -247,23 +247,31 @@ h1 {
     max-width: 700px;
 }
 
-.eslaid{
+.eslaid {
     display: flex;
     overflow: hidden;
 }
 
 /*Para hacer la animacion de alternar las imagenes*/
-#imges{
+#imges {
     animation: desapa 6s infinite;
 }
 
 @keyframes desapa {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.botoncito{
+.botoncito {
     height: 150px;
     width: 300px;
     background-color: #0fb886;
@@ -274,8 +282,31 @@ h1 {
     cursor: pointer;
 }
 
-.h1princi{
+.h1princi {
     text-align: center;
     margin-top: 15%;
 }
 
+
+#textoContainer {
+    border: 5px solid #24252a;
+    /* Agrega un borde al contenedor de texto */
+    padding: 10px;
+    /* Agrega un poco de espacio alrededor del texto */
+    margin-top: 2px;
+    /* Agrega un poco de espacio encima del contenedor de texto */
+    background-color: #0a7d5ba8;
+    /* Agrega un color de fondo al contenedor de texto */
+    border-radius: 10px;
+    /* Agrega esquinas redondeadas al contenedor de texto */
+    text-align: center;
+    /* Centra el texto */
+    font-size: 20px;
+    color: #edf0f1;
+}
+
+#textcontent {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #edf0f1;
+}

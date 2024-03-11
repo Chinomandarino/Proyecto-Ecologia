@@ -287,6 +287,12 @@ h1 {
     margin-top: 15%;
 }
 
+#overlay1{
+    width: 0px;
+    height: 0px;
+    background-color: #0fb886;
+    transition: 0.5s;
+}
 
 #textoContainer {
     border: 5px solid #24252a;

@@ -15,7 +15,6 @@ header {
 .logo {
     margin-right: auto;
 }
-
 .nav__links {
     list-style: none;
     display: flex;
@@ -235,6 +234,7 @@ h1 {
 .Princi{
     display: flex;
     justify-content: space-evenly;
+    visibility: inherit;
 }
 
 .h1Index{
@@ -245,6 +245,8 @@ h1 {
     background-color: #0a7d5ba8;
     max-height: 500px;
     max-width: 700px;
+    visibility: inherit;
+    margin: 25px;
 }
 
 .eslaid{
@@ -279,9 +281,87 @@ h1 {
     margin-top: 15%;
 }
 
+#parteExPet{
+    background-color: #097454;
+    transition: 0.5s;
+}
+
+#botellita_re{
+    animation: Lanzar 2s infinite;
+    position: relative;
+    animation-timing-function: ease-out;
+}
+
+#botellita_tir{
+    animation: Lanzar2 0.03s infinite;
+    position: relative;
+    animation-timing-function: ease-out;
+}
+
+@keyframes Lanzar {
+    0% {opacity: 0;}
+    20% {opacity: 1; rotate: 90deg;}
+    100% {margin-left: 3000px; rotate: 360deg;}
+}
+
+@keyframes Lanzar2 {
+    0% {opacity: 0;}
+    20% {opacity: 1; rotate: 90deg;}
+    100% {margin-right: 3000px; rotate: 360deg;}
+}
+
 #overlay1{
+    visibility: hidden;
     width: 0px;
     height: 0px;
-    background-color: #0fb886;
     transition: 0.5s;
+    margin: 0 auto;
+    bottom: 700px;
+}
+
+#overlay2{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0 auto;
+    bottom: 700px;
+}
+
+#overlay3{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0 auto;
+    bottom: 700px;
+}
+
+#overlay4{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0 auto;
+    bottom: 700px;
+}
+
+#overlay5{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin: 0 auto;
+    bottom: 700px;
+}
+
+.overlaibonito{
+    border: 10px solid #24252a;
+    background-color: #0fb886;
+    box-shadow: 10px 10px 10px;
+    border-radius: 15px;
+}
+
+.Cerrar-enIndex{
+    cursor: pointer;
 }

@@ -4,6 +4,15 @@ const closeButton = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
 const closeIcon = doc.getElementById("equisona");
 const overlay1 =doc.getElementById("overlay1");
+const overlay2 =doc.getElementById("overlay2");
+const overlay3 =doc.getElementById("overlay3");
+const overlay4 =doc.getElementById("overlay4");
+const overlay5 =doc.getElementById("overlay5");
+const equis1 =doc.getElementById("equis1");
+const equis2 =doc.getElementById("equis2");
+const equis3 =doc.getElementById("equis3");
+const equis4 =doc.getElementById("equis4");
+const equis5 =doc.getElementById("equis5");
 
 images=[
   img1=doc.getElementById("img1"),
@@ -86,11 +95,58 @@ if(overlay1){
     overlay.classList.remove("overlay--active");
   })
 
+  equis1.addEventListener("click", () =>{
+        overlay1.style.width="0px"
+        overlay1.style.height="0px"
+        overlay1.style.visibility="hidden"
+  })
+  equis2.addEventListener("click", () =>{
+    overlay2.style.width="0px"
+    overlay2.style.height="0px"
+    overlay2.style.visibility="hidden"
+})
+ equis3.addEventListener("click", () =>{
+  overlay3.style.width="0px"
+  overlay3.style.height="0px"
+  overlay3.style.visibility="hidden"
+})
+ equis4.addEventListener("click", () =>{
+  overlay4.style.width="0px"
+  overlay4.style.height="0px"
+  overlay4.style.visibility="hidden"
+})
+ equis5.addEventListener("click", () =>{
+  overlay5.style.width="0px"
+  overlay5.style.height="0px"
+  overlay5.style.visibility="hidden"
+})
+
   btns.forEach((btn,index) => {
     btn.addEventListener("click", () =>{
       if(index==0){
-        overlay1.style.width="600px"
-        overlay1.style.height="400px"
+        overlay1.style.width="80%"
+        overlay1.style.height="100%"
+        overlay1.style.visibility="visible"
+      }
+      if(index==1){
+        overlay2.style.width="80%"
+        overlay2.style.height="100%"
+        overlay2.style.visibility="visible"
+      }
+      if(index==2){
+        overlay3.style.width="80%"
+        overlay3.style.height="100%"
+        overlay3.style.visibility="visible"
+      }
+      if(index==3){
+        overlay4.style.width="80%"
+        overlay4.style.height="100%"
+        overlay4.style.visibility="visible"
+      }
+      if(index==4){
+        overlay5.style.width="80%"
+        overlay5.style.height="100%"
+        overlay5.style.visibility="visible"
       }
     })
   });

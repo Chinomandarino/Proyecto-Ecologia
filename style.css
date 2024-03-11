@@ -231,13 +231,13 @@ h1 {
     margin-right: 38em;
 }
 
-.Princi{
+.Princi {
     display: flex;
     justify-content: space-evenly;
     visibility: inherit;
 }
 
-.h1Index{
+.h1Index {
     box-shadow: 10px 10px 10px;
     border-radius: 15px;
     text-align: center;
@@ -249,23 +249,31 @@ h1 {
     margin: 25px;
 }
 
-.eslaid{
+.eslaid {
     display: flex;
     overflow: hidden;
 }
 
 /*Para hacer la animacion de alternar las imagenes*/
-#imges{
+#imges {
     animation: desapa 6s infinite;
 }
 
 @keyframes desapa {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.botoncito{
+.botoncito {
     height: 150px;
     width: 300px;
     background-color: #0fb886;
@@ -276,7 +284,7 @@ h1 {
     cursor: pointer;
 }
 
-.h1princi{
+.h1princi {
     text-align: center;
     margin-top: 15%;
 }

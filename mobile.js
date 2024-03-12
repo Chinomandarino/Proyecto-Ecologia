@@ -13,6 +13,13 @@ const equis2 = doc.getElementById("equis2");
 const equis3 = doc.getElementById("equis3");
 const equis4 = doc.getElementById("equis4");
 const equis5 = doc.getElementById("equis5");
+const quitrnover= doc.getElementsByClassName("h1Index")
+
+const overlay1fot = doc.getElementById("overlay1fot");
+const overlay2fot = doc.getElementById("overlay2fot");
+const overlay3fot = doc.getElementById("overlay3fot");
+const overlay4fot = doc.getElementById("overlay4fot");
+const overlay5fot = doc.getElementById("overlay5fot");
 
 images = [
   (img1 = doc.getElementById("img1")),
@@ -100,26 +107,32 @@ if (overlay1) {
     overlay1.style.width = "0px";
     overlay1.style.height = "0px";
     overlay1.style.visibility = "hidden";
+    quitrnover.classList.remove("Novertexto");
+    btns[0].style.clipPath="circle(100%)"
   });
   equis2.addEventListener("click", () => {
     overlay2.style.width = "0px";
     overlay2.style.height = "0px";
     overlay2.style.visibility = "hidden";
+    btns[1].style.clipPath="circle(100%)"
   });
   equis3.addEventListener("click", () => {
     overlay3.style.width = "0px";
     overlay3.style.height = "0px";
     overlay3.style.visibility = "hidden";
+    btns[2].style.clipPath="circle(100%)"
   });
   equis4.addEventListener("click", () => {
     overlay4.style.width = "0px";
     overlay4.style.height = "0px";
     overlay4.style.visibility = "hidden";
+    btns[3].style.clipPath="circle(100%)"
   });
   equis5.addEventListener("click", () => {
     overlay5.style.width = "0px";
     overlay5.style.height = "0px";
     overlay5.style.visibility = "hidden";
+    btns[4].style.clipPath="circle(100%)"
   });
 
   btns.forEach((btn, index) => {
@@ -127,27 +140,42 @@ if (overlay1) {
       if (index == 0) {
         overlay1.style.width = "80%";
         overlay1.style.height = "100%";
+        overlay1fot.style.width="100%"
+        overlay1fot.style.height="100%"
         overlay1.style.visibility = "visible";
+        btns[0].style.clipPath="circle(35%)"
       }
       if (index == 1) {
         overlay2.style.width = "80%";
         overlay2.style.height = "100%";
+        overlay2fot.style.width="100%"
+        overlay2fot.style.height="100%"
         overlay2.style.visibility = "visible";
+        btns[1].style.clipPath="circle(35%)"
       }
       if (index == 2) {
         overlay3.style.width = "80%";
         overlay3.style.height = "100%";
+        overlay3fot.style.width="100%"
+        overlay3fot.style.height="100%"
         overlay3.style.visibility = "visible";
+        btns[2].style.clipPath="circle(35%)"
       }
       if (index == 3) {
         overlay4.style.width = "80%";
         overlay4.style.height = "100%";
+        overlay4fot.style.width="100%"
+        overlay4fot.style.height="100%"
         overlay4.style.visibility = "visible";
+        btns[3].style.clipPath="circle(35%)"
       }
       if (index == 4) {
         overlay5.style.width = "80%";
         overlay5.style.height = "100%";
+        overlay5fot.style.width="100%"
+        overlay5fot.style.height="100%"
         overlay5.style.visibility = "visible";
+        btns[4].style.clipPath="circle(35%)"
       }
     });
   });
